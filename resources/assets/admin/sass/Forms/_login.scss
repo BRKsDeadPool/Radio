@@ -1,0 +1,42 @@
+#app {
+  #loginForm {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #loginFooter {
+    background: $gray;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14pt;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    color: #fff;
+
+    ul {
+      li {
+        display: inline-block;
+        line-height: 64px;
+
+        &:not(:last-child):after {
+          content: " | ";
+          color: #fff;
+          font-weight: bolder;
+
+        }
+
+        a {
+          text-decoration: none;
+          color: #fff;
+
+        }
+      }
+    }
+  }
+}
